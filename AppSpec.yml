@@ -7,4 +7,4 @@ Resources:
         TaskDefinition: "my-ecs-app"
         LoadBalancerInfo:
           ContainerName: "my-ecs-container"
-          ContainerPort: 80
+          ContainerPort: 3000
