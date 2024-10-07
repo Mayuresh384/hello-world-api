@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com)
-      - REPOSITORY_URI=123456789012.dkr.ecr.us-east-1.amazonaws.com/helloworld-api-repo
+      - REPOSITORY_URI=474668395409.dkr.ecr.ap-south-1.amazonaws.com/ecs-api
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
     commands:
