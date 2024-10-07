@@ -1,0 +1,10 @@
+#App spec for ecs
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "my-ecs-app"
+        LoadBalancerInfo:
+          ContainerName: "my-ecs-container"
+          ContainerPort: 80
